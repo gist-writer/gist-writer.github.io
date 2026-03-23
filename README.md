@@ -20,6 +20,8 @@ Gist Writer is a minimal Markdown editor backed by your GitHub Gists. Open a gis
 - **Installable** — works as a PWA on iOS and Android, lives on your home screen
 - **Share** — copy a direct link to any gist; opens in edit mode for owners, read-only for everyone else
 - **Dark / light mode** — follows your system preference automatically
+- **Images** — paste any image URL directly into the editor and it embeds inline; supports imgur and any direct `.jpg .png .gif .webp .svg` link
+
 
 ## Use it
 
