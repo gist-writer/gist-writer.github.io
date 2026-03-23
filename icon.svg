@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#0d1117"/>
+  <g transform="translate(128, 80) scale(0.5)">
+    <path d="M96 640 L416 640 L416 96 L288 96 L288 0 L96 0 Z" fill="#21262d" rx="16"/>
+    <path d="M288 0 L416 96 L288 96 Z" fill="#30363d"/>
+    <line x1="160" y1="200" x2="352" y2="200" stroke="#58a6ff" stroke-width="16" stroke-linecap="round"/>
+    <line x1="160" y1="280" x2="320" y2="280" stroke="#8b949e" stroke-width="16" stroke-linecap="round"/>
+    <line x1="160" y1="360" x2="340" y2="360" stroke="#8b949e" stroke-width="16" stroke-linecap="round"/>
+    <line x1="160" y1="440" x2="260" y2="440" stroke="#8b949e" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(280, 260)">
+    <rect x="0" y="0" width="160" height="24" rx="4" transform="rotate(-45)" fill="#58a6ff"/>
+    <polygon points="0,170 12,130 40,158" fill="#58a6ff" transform="rotate(-45, 20, 150)"/>
+  </g>
+</svg>
