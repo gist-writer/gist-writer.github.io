@@ -1,0 +1,31 @@
+name: Build & Deploy
+on:
+  repository_dispatch:
+    types: [deploy]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout private source
+        uses: actions/checkout@v4
+        with:
+          repository: gist-writer/gist-writer-app
+          token: ${{ secrets.DISPATCH_PAT }}
+          ref: ${{ github.event.client_payload.tag }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install and Build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy to Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
