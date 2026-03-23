@@ -1,5 +1,5 @@
-<img src="icon.svg" width="64" height="64" align="left" style="margin-right: 16px"/>
-
+<img src="icon.svg" width="64" height="64"/>
+  
 # Gist Writer
 
 A distraction-free writing app for GitHub Gists. Runs in the browser, installs as a PWA.
