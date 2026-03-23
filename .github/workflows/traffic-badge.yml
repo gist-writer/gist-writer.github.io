@@ -30,7 +30,7 @@ jobs:
         if: steps.traffic.outputs.uniques
         run: |
           mkdir -p badges
-          curl -sf "https://img.shields.io/badge/visitors-${{ steps.traffic.outputs.uniques }}-brightgreen?style=flat-square" \
+          curl -sf "https://img.shields.io/badge/visitors%20(14d)-${{ steps.traffic.outputs.uniques }}-brightgreen?style=flat-square" \
             > badges/visitors.svg
 
       - name: Commit and push
