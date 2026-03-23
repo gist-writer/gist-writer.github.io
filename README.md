@@ -2,6 +2,8 @@
   
 # Gist Writer
 
+![visitors](badges/visitors.svg)
+
 A distraction-free writing app for GitHub Gists. Runs in the browser, installs as a PWA on desktop, iOS, and Android. 
 
 &nbsp;

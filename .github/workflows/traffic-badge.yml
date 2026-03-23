@@ -1,0 +1,43 @@
+name: Traffic Badge
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch traffic data
+        run: |
+          curl -sf \
+            -H "Authorization: Bearer ${{ secrets.DISPATCH_PAT }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/gist-writer/gist-writer.github.io/traffic/views \
+            > traffic.json
+
+      - name: Extract unique visitors
+        id: traffic
+        run: |
+          UNIQUES=$(python3 -c "import sys,json; print(json.load(sys.stdin)['uniques'])" < traffic.json)
+          if [ -z "$UNIQUES" ]; then echo "No data"; exit 0; fi
+          echo "uniques=$UNIQUES" >> "$GITHUB_OUTPUT"
+
+      - name: Generate badge
+        if: steps.traffic.outputs.uniques
+        run: |
+          mkdir -p badges
+          curl -sf "https://img.shields.io/badge/visitors-${{ steps.traffic.outputs.uniques }}-brightgreen?style=flat-square" \
+            > badges/visitors.svg
+
+      - name: Commit and push
+        if: steps.traffic.outputs.uniques
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add badges/visitors.svg
+          git diff --staged --quiet || git commit -m "chore: update visitor badge [skip ci]"
+          git push
