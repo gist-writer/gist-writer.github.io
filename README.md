@@ -2,7 +2,7 @@
   
 # Gist Writer
 
-A distraction-free writing app for GitHub Gists. Runs in the browser, installs as a PWA.
+A distraction-free writing app for GitHub Gists. Runs in the browser, installs as a PWA on desktop, iOS, and Android. 
 
 &nbsp;
 
@@ -18,6 +18,8 @@ Gist Writer is a minimal Markdown editor backed by your GitHub Gists. Open a gis
 - **Formatting** — select any text for an inline toolbar: bold, italic, links, headers. Notion-style, stays out of the way until you need it
 - **Offline** — edits queue locally and sync when you're back online
 - **Installable** — works as a PWA on iOS and Android, lives on your home screen
+- **Share** — copy a direct link to any gist; opens in edit mode for owners, read-only for everyone else
+- **Dark / light mode** — follows your system preference automatically
 
 ## Use it
 
