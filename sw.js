@@ -1,9 +1,12 @@
-const CACHE_NAME = 'gist-writer-v1';
+const CACHE_NAME = 'gist-writer-v2';
 const SHELL_URLS = [
   '/',
   '/index.html',
   '/manifest.json',
   '/icon.svg',
+  '/icon-192.png',
+  '/icon-512.png',
+  '/apple-touch-icon.png',
 ];
 
 self.addEventListener('install', (event) => {

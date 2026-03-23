@@ -2,10 +2,13 @@
   "name": "Gist Writer",
   "short_name": "Gist Writer",
   "description": "A distraction-free writing app for GitHub Gists",
-  "display": "standalone",
   "start_url": "/",
-  "theme_color": "#0d1117",
-  "background_color": "#0d1117",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#1a1a1a",
+  "lang": "en",
+  "categories": ["productivity", "utilities"],
   "icons": [
     {
       "src": "/icon.svg",
@@ -21,6 +24,12 @@
       "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
