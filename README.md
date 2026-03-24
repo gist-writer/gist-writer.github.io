@@ -3,6 +3,8 @@
 # Gist Writer
 
 ![visitors](badges/visitors.svg)
+[![Deploy](https://img.shields.io/github/deployments/gist-writer/gist-writer.github.io/github-pages?label=deploy&logo=github)](https://github.com/gist-writer/gist-writer.github.io/deployments)
+[![Version](https://img.shields.io/endpoint?url=https://gist-writer.github.io/version.json)](https://github.com/gist-writer/gist-writer-app/tags)
 
 A distraction-free writing app for GitHub Gists. Runs in the browser, installs as a PWA on desktop, iOS, and Android. 
 
