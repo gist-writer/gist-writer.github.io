@@ -18,6 +18,7 @@ Gist Writer is a minimal Markdown editor backed by your GitHub Gists. Open a gis
 
 - 📝 **Draft mode** — start writing immediately, gist is created in the background
 - 💾 **Auto-save** — debounced saves to GitHub, works silently while you type
+- 🕓 **Version history** — every save is a commit; your full edit history is preserved in git forever, nothing is ever lost
 - 🔍 **Search** — filter and find your gists by filename instantly; GitHub's own UI has no search
 - ✨ **Formatting** — select any text for an inline toolbar: bold, italic, links, headers. Notion-style, stays out of the way until you need it
 - 📡 **Offline** — edits queue locally and sync when you're back online
