@@ -10,7 +10,7 @@
 
 *A distraction-free writing app backed by GitHub Gists*
 
-[![Deploy](https://img.shields.io/github/deployments/gist-writer/gist-writer.github.io/github-pages?label=deploy&logo=github&style=for-the-badge&color=4A90D9)](https://github.com/gist-writer/gist-writer.github.io/deployments)
+[![Deploy](https://img.shields.io/github/deployments/gist-writer/gist-writer.github.io/github-pages?label=deploy&logo=github&style=for-the-badge)](https://github.com/gist-writer/gist-writer.github.io/deployments)
 [![Version](https://img.shields.io/endpoint?url=https://gist-writer.github.io/version.json&style=for-the-badge&color=4A90D9)](https://github.com/gist-writer/gist-writer-app/tags)
 ![visitors](badges/visitors.svg)
 
