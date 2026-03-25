@@ -42,7 +42,7 @@ Gist Writer is a minimal WYSIWYG markdown editor backed by your GitHub Gists. Op
 
 **[gist-writer.github.io](https://gist-writer.github.io)**
 
-Sign in with GitHub. That's it.
+Start writing. Sign in to github to enable sync.
 
 ## Privacy
 
