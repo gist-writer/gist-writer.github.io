@@ -1,19 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <style>
-    .bg   { fill: #141414; }
-    .text { fill: #e8e8e8; }
-    .ul   { fill: #4A90D9; }
-    @media (prefers-color-scheme: light) {
-      .bg   { fill: #ffffff; }
-      .text { fill: #1a1a1a; }
-    }
-  </style>
-  <rect width="512" height="512" rx="64" ry="64" class="bg"/>
-  <text x="50%" y="48%"
-        text-anchor="middle"
-        dominant-baseline="middle"
-        font-family="'Courier New', Menlo, 'DejaVu Sans Mono', monospace"
-        font-size="200" font-weight="bold"
-        class="text">GW</text>
-  <rect x="31%" y="63%" width="38%" height="2%" rx="1%" class="ul"/>
+  <path d="M 112,0 L 400,0 C 485,0 512,27 512,112 L 512,400 C 512,485 485,512 400,512 L 112,512 C 27,512 0,485 0,400 L 0,112 C 0,27 27,0 112,0 Z" fill="#1a1a1a"/>
+  <text x="256" y="264"
+        text-anchor="middle" dominant-baseline="central"
+        font-family="Georgia, 'Times New Roman', 'Noto Serif', serif"
+        font-size="195" font-weight="bold"
+        letter-spacing="-4"
+        fill="#e8e8e8">GW</text>
 </svg>
