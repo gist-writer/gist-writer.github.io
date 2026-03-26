@@ -24,7 +24,7 @@
 
 Gist Writer is a minimal WYSIWYG markdown editor backed by your GitHub Gists. Open a gist, write, close the tab — it saves automatically. No account required beyond GitHub OAuth.
 
-- **WYSIWYG formatting** — select text for an inline toolbar: bold, italic, links, headers. Stays out of the way until you need it
+- **WYSIWYG formatting** — select text for an inline toolbar: bold, italic, links, headers.
 - **Auto-save** — periodically saves to GitHub, works silently in the background as you type
 - **Gist management** — browse, search, rename and delete; everything GitHub's UI lacks
 - **Offline** — edits queue locally and sync when you're back online
