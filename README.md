@@ -20,29 +20,23 @@
 
 ---
 
-## What it is
+## What it does
 
 Gist Writer is a minimal WYSIWYG markdown editor backed by your GitHub Gists. Open a gist, write, close the tab — it saves automatically. No account required beyond GitHub OAuth.
 
-- **Draft mode** — start writing immediately, gist is created in the background
-- **Auto-save** — debounced saves to GitHub, works silently while you type
-- **Version history** — every save is a commit; your full edit history is preserved in git forever, nothing is ever lost
-- **Search** — filter and find your gists by filename instantly; GitHub's own UI has no search
-- **Formatting** — select any text for an inline toolbar: bold, italic, links, headers. Notion-style, stays out of the way until you need it
+- **WYSIWYG formatting** — select text for an inline toolbar: bold, italic, links, headers. Stays out of the way until you need it
+- **Auto-save** — periodically saves to GitHub, works silently in the background as you type
+- **Gist management** — browse, search, rename and delete; everything GitHub's UI lacks
 - **Offline** — edits queue locally and sync when you're back online
-- **Installable** — works as a PWA on iOS and Android, lives on your home screen
-- **Share** — copy a direct link to any gist; opens in edit mode for owners, read-only for everyone else (private/public)
-- **Dark / light mode** — follows your system preference automatically
-- **Images** — paste any image URL directly into the editor and it embeds inline; supports imgur and any direct `.jpg .png .gif .webp .svg` link
-- **Drag & drop** — drag a `.md` file from your desktop onto the editor to instantly create a new gist from it
-- **Zero data retention** — signing out wipes your token and all local data instantly; nothing lingers on the device
+- **Share** — every gist gets a direct link; edit mode for owners, read-only for everyone else
+- **Version history** — every save is a git commit; nothing is ever lost
 
 
 ## Use it
 
 **[gist-writer.github.io](https://gist-writer.github.io)**
 
-Start writing. Sign in to github to enable sync.
+Start writing. Sign in to GitHub to enable sync.
 
 ## Privacy
 
