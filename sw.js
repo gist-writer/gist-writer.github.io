@@ -28,6 +28,11 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
+// Allow the page to force-activate a waiting SW (used by sw-register.ts)
+self.addEventListener('message', (event) => {
+  if (event.data?.type === 'SKIP_WAITING') self.skipWaiting();
+});
+
 self.addEventListener('fetch', (event) => {
   // Skip API calls entirely — let the browser handle them
   if (event.request.url.includes('api.github.com')) {
