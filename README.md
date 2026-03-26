@@ -44,6 +44,4 @@ Your GitHub token is stored only in your browser's `localStorage`. No server, no
 
 → [Full data & privacy details](docs/data-privacy.md)
 
----
 
-*Built with [gist-writer/gist-writer-app](https://github.com/gist-writer/gist-writer-app)*
