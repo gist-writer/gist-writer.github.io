@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gist-writer-v3';
+const CACHE_NAME = 'gist-writer-v4';
 const SHELL_URLS = [
   '/',
   '/index.html',
@@ -8,6 +8,14 @@ const SHELL_URLS = [
   '/icon-512.png',
   '/icon-512-maskable.png',
   '/apple-touch-icon.png',
+  '/fonts/geist-latin-400.woff2',
+  '/fonts/geist-latin-500.woff2',
+  '/fonts/geist-latin-700.woff2',
+  '/fonts/ia-writer-quattro-latin-400.woff2',
+  '/fonts/ia-writer-quattro-latin-400-italic.woff2',
+  '/fonts/ia-writer-quattro-latin-700.woff2',
+  '/fonts/ia-writer-mono-latin-400.woff2',
+  '/fonts/ia-writer-mono-latin-700.woff2',
 ];
 
 self.addEventListener('install', (event) => {
@@ -58,7 +66,7 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Cache-first for everything else (hashed assets, icons, manifest)
+  // Cache-first for everything else (hashed assets, icons, manifest, fonts)
   event.respondWith(
     caches.match(event.request).then((cached) => {
       const fetchPromise = fetch(event.request).then((response) => {
