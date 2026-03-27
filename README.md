@@ -20,28 +20,33 @@
 
 ---
 
-## What it does
+## Why Gist Writer?
 
-Gist Writer is a minimal WYSIWYG markdown editor backed by your GitHub Gists. Open a gist, write, close the tab — it saves automatically. No account required beyond GitHub OAuth.
+Most markdown editors save to their own cloud — locking your notes into someone else's database. Gist Writer saves directly to your GitHub Gists, so your files are plain `.md` files you already own, version-controlled by GitHub, and accessible from anywhere. Gists can be **public** (discoverable, searchable) or **secret** (unlisted — only accessible via direct URL).
 
-- **WYSIWYG formatting** — select text for an inline toolbar: bold, italic, links, headers.
+---
+
+## Features
+
+- **WYSIWYG formatting** — select text for an inline toolbar: bold, italic, links, headers
 - **Auto-save** — periodically saves to GitHub, works silently in the background as you type
 - **Gist management** — browse, search, rename and delete; everything GitHub's UI lacks
 - **Offline** — edits queue locally and sync when you're back online
 - **Share** — every gist gets a direct link; edit mode for owners, read-only for everyone else
 - **Version history** — every save is a git commit; nothing is ever lost
 
+---
 
-## Use it
+## Getting Started
 
-**[gist-writer.github.io](https://gist-writer.github.io)**
+1. Visit **[gist-writer.github.io](https://gist-writer.github.io)** — no sign-in required, start writing immediately
+2. Sign in with GitHub to sync your notes as Gists — public or secret, shareable by link
+3. Install as a PWA — runs as a native app on both desktop and mobile
 
-Start writing. Sign in to GitHub to enable sync.
+---
 
 ## Privacy
 
 Your GitHub token is stored only in your browser's `localStorage`. No server, no analytics, no tracking. All reads and writes go directly to the GitHub API.
 
 → [Full data & privacy details](docs/data-privacy.md)
-
-
